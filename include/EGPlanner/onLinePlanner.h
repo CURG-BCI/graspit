@@ -64,7 +64,7 @@ class transf;
 
 class OnLinePlanner : public SimAnnPlanner
 {
-private:
+protected:
 	/*! The on-line planner needs to know about a reference hand that is controlled by the user and which
 		gives us a reference point for the search. It is not ideal to store it like this, but so far
 		this is the working solution.*/
@@ -106,7 +106,7 @@ private:
 
 	void resetParameters();
 	/*! The main loop here is divided into two parts. The mainLoop() itself manages 
-		the mRefHand, looks at input, manages the sub-thread that does F-C testing 
+        the mRefHand, looks at input, manages the sub-thread that does F-C testing
 		etc. */
 	void mainLoop();
 	/*! This part is called from the main loop and is responsible for the actual 

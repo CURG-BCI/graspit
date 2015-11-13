@@ -154,13 +154,15 @@ GraspItGUI::processArgs(int argc, char** argv)
   //look for plugins of the form plugin:name in the arguments
   for (int i=1; i<argc; i++) {
     QString arg(argv[i]);
-    if (arg.section(',',0,0)=="plugin") {
-      QString libName = arg.section(',',1,1);
-	  std::cout << "Processing arguments \n ";
+    std::cout << "Looking for plugins, looking at arg: " << arg.toStdString() << std::endl;
+    if (arg.startsWith("plugin:")) {
+      QString libName= arg.remove("plugin:");
+      std::cout << "Found Plugin: " << libName.toStdString() << std::endl;
       PluginCreator* creator = PluginCreator::loadFromLibrary(libName.toStdString());	  
       if (creator) {
         mPluginCreators.push_back(creator);
-      } else {
+      } 
+      else {
         DBGA("Failed to load plugin: " << libName.latin1());
       }
     }
