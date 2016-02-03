@@ -223,6 +223,10 @@ bool SqlDatabaseManager::GetGrasps(const Model& model,
   PROF_START_TIMER(GET_GRASPS_SQL);
   if (!database_.Query("SELECT * FROM get_grasps('" + model.ModelName() + 
                        "','" + hand_name + "');", &results)) 
+
+//SELECT
+      //*
+//From get_grasps('all', 'BARRETT_WOOD' );
     return false;
   PROF_STOP_TIMER(GET_GRASPS_SQL);
   // Get the column indices for the columns we care about.

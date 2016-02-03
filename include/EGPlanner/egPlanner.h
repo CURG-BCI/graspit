@@ -108,6 +108,7 @@ protected:
 
 	//! If used, this is a target state, or an "input" state provided by the user as a guideline
 	GraspPlanningState *mTargetState;
+
 	//! Tells the planner if it should process its own input state, based on Cyberglove, Flock of Birds etc.
 	unsigned char mInputType;
 	//! Sets the values in the mTargetState based in the mInputType flag
@@ -229,5 +230,6 @@ public:
 
 	//! Set the stream for outputting stats and info
 	void setStatStream(std::ostream *out) const;
+    void render(Hand * h);
 };
 #endif

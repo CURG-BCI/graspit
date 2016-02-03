@@ -166,6 +166,17 @@ GraspItGUI::processArgs(int argc, char** argv)
         DBGA("Failed to load plugin: " << libName.latin1());
       }
     }
+    else if (arg.startsWith("gdb plugin:")) {
+      QString libName= arg.remove("gdb plugin:");
+      std::cout << "Found Plugin in Debug Mode: " << libName.toStdString() << std::endl;
+      PluginCreator* creator = PluginCreator::loadFromLibrary(libName.toStdString());
+      if (creator) {
+        mPluginCreators.push_back(creator);
+      }
+      else {
+        DBGA("Failed to load plugin in Debug Mode: " << libName.latin1());
+      }
+    }
   }
   
   //start any plugins with auto start enabled

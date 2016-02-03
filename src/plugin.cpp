@@ -75,6 +75,7 @@ PluginCreator* PluginCreator::loadFromLibrary(std::string libName)
   } else{
     //filename is relative to GRASPIT_PLUGIN_DIR
     QString pluginDirs = QString(getenv("GRASPIT_PLUGIN_DIR"));
+    std::cout<<"Plugin Directory: "<<pluginDirs.toStdString().c_str()<<std::endl;
     if (pluginDirs.isNull()) {
       DBGA("Relative plugin file specified, but GRASPIT_PLUGIN_DIR is not set");
       return NULL;
