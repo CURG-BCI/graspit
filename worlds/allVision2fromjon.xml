@@ -1,49 +1,39 @@
 <?xml version="1.0" ?>
 <world>
-	<graspableBody>
-		<filename>models/object_database/all.xml</filename>
-		<transform>
-			<fullTransform>(+1 +0 +0 +0)[+0 +0 +0]</fullTransform>
-		</transform>
-	</graspableBody>
 	<obstacle>
 		<filename>models/objects/experiment_table.xml</filename>
 		<transform>
-			<fullTransform>(+1 +0 +0 +0)[+0 +0 -3.49613]</fullTransform>
+			<fullTransform>(+0.721826 +0.00117302 -0.0390539 +0.690971)[+582.598 -96.6396 +14.907]</fullTransform>
 		</transform>
 	</obstacle>
+	<graspableBody>
+		<filename>models/object_database/gillette_shaving_gel.xml</filename>
+		<transform>
+			<fullTransform>(+0.00247472 +0.209681 -0.977441 -0.025219)[-65.5534 -484.601 +164.51]</fullTransform>
+		</transform>
+	</graspableBody>
+	<graspableBody>
+		<filename>models/object_database/garnier_shampoo_bottle.xml</filename>
+		<transform>
+			<fullTransform>(+0.370886 +0.00722877 -0.0175152 +0.928485)[+76.8671 -419.081 +7.8952]</fullTransform>
+		</transform>
+	</graspableBody>
+	<graspableBody>
+		<filename>models/object_database/all.xml</filename>
+		<transform>
+			<fullTransform>(+0.396475 -0.00352708 -0.00117187 +0.918038)[+238.008 -331.879 -13.6358]</fullTransform>
+		</transform>
+	</graspableBody>
 	<robot>
 		<filename>models/robots/MicoGripper/MicoGripper.xml</filename>
-		<dofValues>+0.905708 +1.06572 +0 +0 +1.25072 +0 +0 +1.04603 +0 +0 </dofValues>
+		<dofValues>+0.905708 +1.06572 +0 +0 </dofValues>
 		<transform>
-			<fullTransform>(-0.0165886 +0.523838 -0.850178 -0.0501643)[-1.49517 -2.22145 +266.769]</fullTransform>
+			<fullTransform>(-0.0165886 +0.523838 -0.850178 -0.0501643)[-117.539 +47.761 +364.056]</fullTransform>
 		</transform>
 	</robot>
-  <!--<robot>
-		<filename>models/robots/NewBarrett/NewBarrett.xml</filename>
-		<dofValues>+0 +2.51327 +1 +2.33002 +0 +1.18752 +0 +0 +1.17721 +0 +0 </dofValues>
-		<transform>
-			<fullTransform>(+0.00170073 -0.808548 +0.588394 -0.00626615)[-11.4455 -9.34794 +347.669]</fullTransform>
-		</transform>
-	</robot>
-	<robot>
-		<filename>models/robots/NewBarrett/NewBarrett.xml</filename>
-		<dofValues>+3.14159 +0 +0 +0 +0 +0 +0 +0 +0 +0 </dofValues>
-		<transform>
-			<fullTransform>(-0.0183886 -0.813781 +0.580876 -0.00222292)[-74.8586 -103.238 +338.34]</fullTransform>
-		</transform>
-	</robot>-->
-  <!-- <robot>
-		<filename>models/robots/NewBarrett/NewBarrett.xml</filename>
-		<dofValues>+0.905708 +1.06572 +0 +0 +1.25072 +0 +0 +1.04603 +0 +0 </dofValues>
-		<transform>
-			<fullTransform>(-0.0165886 +0.523838 -0.850178 -0.0501643)[-1.49517 -2.22145 +266.769]</fullTransform>
-		</transform>
-	</robot>
-  -->
 	<camera>
-		<position>+2709.89 -296.841 -12.1346</position>
-		<orientation>+0.5636 +0.426372 +0.436411 +0.556873</orientation>
-		<focalDistance>+2714.81</focalDistance>
+		<position>+45.4263 +1028.59 +803.154</position>
+		<orientation>+0.015224 -0.550545 -0.833454 -0.0449882</orientation>
+		<focalDistance>+1422.93</focalDistance>
 	</camera>
 </world>
