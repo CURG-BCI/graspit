@@ -210,9 +210,9 @@ void PositionStateEllipsoid::createVariables()
 	mVariables.push_back( new SearchVariable("dist",-50, 100, 50) );
 
 	//ellipsoid scaling parameters
-	mParameters.push_back(SearchParameter("a",80));
-	mParameters.push_back(SearchParameter("b",80));
-	mParameters.push_back(SearchParameter("c",160));
+    mParameters.push_back(new SearchParameter("a",80));
+    mParameters.push_back(new SearchParameter("b",80));
+    mParameters.push_back(new SearchParameter("c",160));
 }
 transf PositionStateEllipsoid::getCoreTran() const
 {

@@ -77,7 +77,7 @@ VariableSet::VariableSet(const VariableSet &vs)
 		mVariables.push_back(new SearchVariable(vs.getVariable(var)));
 	}
 	for (int par=0; par<(int)vs.mParameters.size(); par++) {
-		mParameters.push_back(SearchParameter(vs.mParameters[par]));
+        mParameters.push_back(new SearchParameter(*(vs.mParameters[par])));
 	}
 	mHand = vs.mHand;
 }
@@ -162,56 +162,56 @@ VariableSet::readVariable(QString name) const
 void 
 VariableSet::setParameter(QString name, double value)
 {
-	std::vector<SearchParameter>::iterator it;
+    std::vector<SearchParameter*>::iterator it;
 	for(it = mParameters.begin(); it!=mParameters.end(); it++) {
-		if ( it->name() == name ) break;
+        if ( (*it)->name() == name ) break;
 	}
 	if (it==mParameters.end()) {
 		DBGA("Parameter " << name.latin1() << " not found!");
 		assert(0);
 		return;
 	}
-	it->set(value);
+    (*it)->set(value);
 }
 
 double 
 VariableSet::getParameter (QString name) const
 {
-	std::vector<SearchParameter>::const_iterator it;
+    std::vector<SearchParameter*>::const_iterator it;
 	for(it = mParameters.begin(); it!=mParameters.end(); it++) {
-		if ( it->name() == name ) break;
+        if ( (*it)->name() == name ) break;
 	}
 	if (it==mParameters.end()) {
 		DBGA("Parameter " << name.latin1() << " not found!");
 		assert(0);
 		return 0;
 	}
-	return it->get();
+    return (*it)->get();
 }
 
 void
 VariableSet::addParameter(QString name, double value)
 {
-	std::vector<SearchParameter>::iterator it;
+    std::vector<SearchParameter*>::iterator it;
 	for(it = mParameters.begin(); it!=mParameters.end(); it++) {
-		if ( it->name() == name ) break;
+        if ( (*it)->name() == name ) break;
 	}
 	if (it!=mParameters.end()) {
 		DBGA("Parameter " << name.latin1() << " already present!");
 		assert(0);
 		return;
 	}
-	mParameters.push_back(SearchParameter(name, value));
+    mParameters.push_back(new SearchParameter(name, value));
 }
 
 void
 VariableSet::removeParameter(QString name)
 {
-	std::vector<SearchParameter>::iterator it;
+    std::vector<SearchParameter*>::iterator it;
 	for(it = mParameters.begin(); it!=mParameters.end(); it++) {
-		if ( it->name() == name ) break;
+        if ( (*it)->name() == name ) break;
 	}
-	if (it==mParameters.end()) {
+    if (it==mParameters.end()) {
 		DBGA("Parameter " << name.latin1() << " does not exist!");
 		assert(0);
 		return;

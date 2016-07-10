@@ -39,7 +39,6 @@ GuidedPlanner::GuidedPlanner(Hand *h)
 	mHand = h;
 	init();
 	mEnergyCalculator = SearchEnergy::getSearchEnergy(ENERGY_CONTACT_QUALITY);
-	((ClosureSearchEnergy*)mEnergyCalculator)->setAvoidList( &mAvoidList );
 	mSimAnn = new SimAnn();
 	mChildClones = true;
 	mChildThreads = true;
@@ -53,8 +52,6 @@ GuidedPlanner::GuidedPlanner(Hand *h)
 	mMinChildEnergy = -0.1f;
 	mChildEnergyType = ENERGY_STRICT_AUTOGRASP;
 	mMaxChildSteps = 200;
-
-	((ClosureSearchEnergy*)mEnergyCalculator)->setThreshold(mDistanceThreshold);
 }
 
 GuidedPlanner::~GuidedPlanner()

@@ -99,10 +99,10 @@ private:
 	double mValue;
 public:
 	SearchParameter(QString name, double val=0) : mName(name), mValue(val) {}
-	SearchParameter(const SearchParameter &p) {
-		mName = p.mName;
-		mValue = p.mValue;
-	}
+    SearchParameter(const SearchParameter &p) {
+        mName = p.mName;
+        mValue = p.mValue;
+    }
 	void set(double v){mValue = v;}
 	double get() const {return mValue;}
 	QString name() const {return mName;}
@@ -117,7 +117,7 @@ protected:
 	//! The variables in the set
 	std::vector<SearchVariable*> mVariables;
 	//! The parameters in the set
-	std::vector<SearchParameter> mParameters;
+    std::vector<SearchParameter*> mParameters;
 	//! The hand pointer shouldn't really be here
 	/*! At this level nobody cares about that, but it was easier like this. */
 	const Hand *mHand;
@@ -411,7 +411,7 @@ void VariableSet::copyValuesFrom(const VariableSet *s)
 		mVariables[i]->setFixed( s->mVariables[i]->isFixed() );
 	}
 	for (int i=0; i<(int)s->mParameters.size(); i++) {
-		mParameters[i].set( s->mParameters[i].get() );
+        mParameters[i]=s->mParameters[i];
 	}
 }
 
