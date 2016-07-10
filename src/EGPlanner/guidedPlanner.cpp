@@ -38,13 +38,13 @@ GuidedPlanner::GuidedPlanner(Hand *h)
 {
 	mHand = h;
 	init();
-    mEnergyCalculator = SearchEnergy::getSearchEnergy(ENERGY_CONTACT_QUALITY);
+	mEnergyCalculator = SearchEnergy::getSearchEnergy(ENERGY_CONTACT_QUALITY);
 	((ClosureSearchEnergy*)mEnergyCalculator)->setAvoidList( &mAvoidList );
 	mSimAnn = new SimAnn();
 	mChildClones = true;
 	mChildThreads = true;
 	mMaxChildren = 1;
-	mRepeat = true;
+	mRepeat = false;
 
 	//default values set up for columbia dbase project
 	mBestListSize = 20;
