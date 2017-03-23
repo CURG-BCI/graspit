@@ -3,13 +3,13 @@
 	<obstacle>
 		<filename>models/objects/experiment_table.xml</filename>
 		<transform>
-			<fullTransform>(0 0 0 1)[-150 +675 -300.907]</fullTransform>
+			<fullTransform>(0 0 0 1)[-150 +675 -325.907]</fullTransform>
 		</transform>
 	</obstacle>
 	<obstacle>
 		<filename>models/objects/experiment_table.xml</filename>
 		<transform>
-			<fullTransform>(0 0 0 1)[-150 +675 -235.907]</fullTransform>
+			<fullTransform>(0 0 0 1)[-150 +675 -260.907]</fullTransform>
 		</transform>
 	</obstacle>
 	<obstacle>
