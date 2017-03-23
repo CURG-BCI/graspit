@@ -3,25 +3,37 @@
 	<obstacle>
 		<filename>models/objects/experiment_table.xml</filename>
 		<transform>
-			<fullTransform>(+0.721826 +0.00117302 -0.0390539 +0.690971)[+582.598 -96.6396 +14.907]</fullTransform>
+			<fullTransform>(0 0 0 1)[-150 +675 -300.907]</fullTransform>
+		</transform>
+	</obstacle>
+	<obstacle>
+		<filename>models/objects/experiment_table.xml</filename>
+		<transform>
+			<fullTransform>(0 0 0 1)[-150 +675 -235.907]</fullTransform>
+		</transform>
+	</obstacle>
+	<obstacle>
+		<filename>models/objects/chair.xml</filename>
+		<transform>
+			<fullTransform>(0 0 0 1)[+600.598 -275 -400.907]</fullTransform>
 		</transform>
 	</obstacle>
 	<graspableBody>
 		<filename>models/object_database/gillette_shaving_gel.xml</filename>
 		<transform>
-			<fullTransform>(+0.00247472 +0.209681 -0.977441 -0.025219)[-65.5534 -484.601 +164.51]</fullTransform>
+			<fullTransform>(+0.00247472 +0.209681 -0.977441 -0.025219)[-65.5534 -250.601 +164.51]</fullTransform>
 		</transform>
 	</graspableBody>
 	<graspableBody>
 		<filename>models/object_database/garnier_shampoo_bottle.xml</filename>
 		<transform>
-			<fullTransform>(+0.370886 +0.00722877 -0.0175152 +0.928485)[+76.8671 -419.081 +7.8952]</fullTransform>
+			<fullTransform>(+0.370886 +0.00722877 -0.0175152 +0.928485)[+76.8671 -240.081 +7.8952]</fullTransform>
 		</transform>
 	</graspableBody>
 	<graspableBody>
 		<filename>models/object_database/all.xml</filename>
 		<transform>
-			<fullTransform>(+0.396475 -0.00352708 -0.00117187 +0.918038)[+238.008 -331.879 -13.6358]</fullTransform>
+			<fullTransform>(+0.396475 -0.00352708 -0.00117187 +0.918038)[+238.008 -140.879 -13.6358]</fullTransform>
 		</transform>
 	</graspableBody>
 	<robot>
@@ -32,7 +44,7 @@
 		</transform>
 	</robot>
 	<camera>
-		<position>+45.4263 +1028.59 +803.154</position>
+		<position>-50.4263 +1800.59 +800.154</position>
 		<orientation>+0.015224 -0.550545 -0.833454 -0.0449882</orientation>
 		<focalDistance>+1422.93</focalDistance>
 	</camera>

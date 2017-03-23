@@ -49,6 +49,7 @@ ListPlanner::ListPlanner(Hand *h)
 */
 ListPlanner::~ListPlanner()
 {
+    //showVisualMarkers(false);
 	while (!mInputList.empty()){
 		delete mInputList.back();
 		mInputList.pop_back();

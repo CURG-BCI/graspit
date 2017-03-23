@@ -130,8 +130,8 @@ transf PositionStateComplete::getCoreTran() const
 	double qw = readVariable("Qw");
 	double qx = readVariable("Qx");
 	double qy = readVariable("Qy");
-	double qz = readVariable("Qz");
-	return transf(Quaternion(qw,qx,qy,qz), vec3(tx,ty,tz));	
+    double qz = readVariable("Qz");
+    return mHand->getApproachTran().inverse() * transf(Quaternion(qw,qx,qy,qz), vec3(tx,ty,tz));
 }
 void PositionStateComplete::setTran(const transf &t)
 {

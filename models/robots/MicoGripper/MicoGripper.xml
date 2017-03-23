@@ -51,11 +51,11 @@
             <viscousFriction>5.0e+7</viscousFriction>
         </joint>
         <joint type="Revolute">
-            <theta>d1</theta>
+            <theta>d1+-30</theta>
             <d>0.0</d>
             <a>0.0</a>
             <alpha>0</alpha>
-            <minValue>0</minValue>
+            <minValue>-30</minValue>
             <maxValue>70</maxValue>
             <viscousFriction>5.0e+7</viscousFriction>
         </joint>
@@ -79,11 +79,11 @@
             <viscousFriction>5.0e+7</viscousFriction>
         </joint>
         <joint type="Revolute">
-            <theta>d3</theta>
+            <theta>d3+-30</theta>
             <d>0.0</d>
             <a>0.0</a>
             <alpha>0</alpha>
-            <minValue>0</minValue>
+            <minValue>-30</minValue>
             <maxValue>70</maxValue>
             <viscousFriction>5.0e+7</viscousFriction>
         </joint>
