@@ -36,22 +36,22 @@
 			<fullTransform>(-0.00320644 -0.211566 +0.976157 +0.0484458)[+304.668 -465.615 +114.829]</fullTransform>
 		</transform>
 	</graspableBody>
-	<obstacle>
+	<graspableBody>
 		<filename>models/objects/monitor.xml</filename>
 		<transform>
 			<fullTransform>(+0.365155 -0.388308 -0.578295 +0.61762)[-82.9527 -366.875 +87.6846]</fullTransform>
 		</transform>
-	</obstacle>
+	</graspableBody>
 	<robot>
 		<filename>models/robots/MicoGripper/MicoGripper.xml</filename>
 		<dofValues>+0.905708 +1.06572 +0 +0 </dofValues>
 		<transform>
-			<fullTransform>(-0.0165886 +0.523838 -0.850178 -0.0501643)[+324.947 -226.232 -267.315]</fullTransform>
+			<fullTransform>(-0.0165886 +0.523838 -0.850178 -0.0501643)[-1170.54 +47.761 +364.056]</fullTransform>
 		</transform>
 	</robot>
 	<camera>
-		<position>+507.938 -1434.78 -355.424</position>
-		<orientation>-0.155963 +0.774273 -0.602267 +0.115982</orientation>
-		<focalDistance>+1107.05</focalDistance>
+		<position>+278.383 -1359.6 -294.912</position>
+		<orientation>-0.167304 +0.780584 -0.588669 +0.127148</orientation>
+		<focalDistance>+671.457</focalDistance>
 	</camera>
 </world>
