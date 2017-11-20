@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<world>
+	<obstacle>
+		<filename>models/objects/experiment_table.xml</filename>
+		<transform>
+			<fullTransform>(+0.651406 +0.0109093 -0.00883352 -0.758599)[-828.014 -224.211 +769.653]</fullTransform>
+		</transform>
+	</obstacle>
+	<obstacle>
+		<filename>models/objects/chair.xml</filename>
+		<transform>
+			<fullTransform>(+0.0023129 +0.0848239 +0.996377 +0.00566737)[-1022.48 -403.804 +1615.7]</fullTransform>
+		</transform>
+	</obstacle>
+	<obstacle>
+		<filename>models/objects/monitor.xml</filename>
+		<transform>
+			<fullTransform>(+0.539778 -0.561441 -0.424199 +0.462038)[-793.294 +102.131 +993.958]</fullTransform>
+		</transform>
+	</obstacle>
+	<graspableBody>
+		<filename>models/object_database/block_50.xml</filename>
+		<transform>
+			<fullTransform>(+0.933002 -6.0681e-17 +1.87308e-17 -0.35987)[-513.806 -71.7472 +932.415]</fullTransform>
+		</transform>
+	</graspableBody>
+	<graspableBody>
+		<filename>models/object_database/block_50.xml</filename>
+		<transform>
+			<fullTransform>(+0.996593 -2.51891e-17 +9.56071e-19 -0.0824805)[-325.023 -92.986 +936.917]</fullTransform>
+		</transform>
+	</graspableBody>
+	<graspableBody>
+		<filename>models/object_database/block_64.xml</filename>
+		<transform>
+			<fullTransform>(+0.926114 -6.15557e-17 +1.84202e-17 -0.377243)[-436.399 -214.456 +897.715]</fullTransform>
+		</transform>
+	</graspableBody>
+	<graspableBody>
+		<filename>models/object_database/block_50.xml</filename>
+		<transform>
+			<fullTransform>(+0.904677 -3.36624e-17 +3.29747e-17 -0.426098)[-226.629 +17.6066 +907.331]</fullTransform>
+		</transform>
+	</graspableBody>
+	<robot>
+		<filename>models/robots/MicoGripper/MicoGripper.xml</filename>
+		<dofValues>+0 +0 +0 +0 </dofValues>
+		<transform>
+			<fullTransform>(-6.0681e-17 -0.933002 +0.35987 +1.87308e-17)[-513.806 -71.7472 +759.315]</fullTransform>
+		</transform>
+	</robot>
+	<camera>
+		<position>-996.992 -1012.79 +480.05</position>
+		<orientation>+0.0985193 +0.792659 -0.593602 -0.098093</orientation>
+		<focalDistance>+949.165</focalDistance>
+	</camera>
+</world>
