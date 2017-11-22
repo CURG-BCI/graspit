@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<world>
+	<obstacle>
+		<filename>models/objects/experiment_table.xml</filename>
+		<transform>
+			<fullTransform>(+0.651406 +0.0109093 -0.00883352 -0.758599)[+33.6132 -429.276 -249.307]</fullTransform>
+		</transform>
+	</obstacle>
+	<obstacle>
+		<filename>models/objects/chair.xml</filename>
+		<transform>
+			<fullTransform>(+0.99558 +0.002462 -0.0399156 -0.0849774)[+771.481 -839.166 -486.621]</fullTransform>
+		</transform>
+	</obstacle>
+	<obstacle>
+		<filename>models/objects/monitor.xml</filename>
+		<transform>
+			<fullTransform>(+0.562467 +0.517067 +0.45597 +0.456469)[+725.867 -181.586 +79.6401]</fullTransform>
+		</transform>
+	</obstacle>
+	<graspableBody>
+		<filename>models/object_database/block_50.xml</filename>
+		<transform>
+			<fullTransform>(+0.939718 +0.0252662 -0.00691225 +0.340945)[+397.685 -306.028 +118.99]</fullTransform>
+		</transform>
+	</graspableBody>
+	<graspableBody>
+		<filename>models/object_database/block_50.xml</filename>
+		<transform>
+			<fullTransform>(+0.999271 +0.0261576 +0.00139291 +0.0277902)[+208.195 -319.935 +114.373]</fullTransform>
+		</transform>
+	</graspableBody>
+	<graspableBody>
+		<filename>models/object_database/block_50.xml</filename>
+		<transform>
+			<fullTransform>(+0.969058 +0.02583 -0.00435568 +0.24544)[+113.598 -207.911 +148.582]</fullTransform>
+		</transform>
+	</graspableBody>
+	<graspableBody>
+		<filename>models/object_database/block_64.xml</filename>
+		<transform>
+			<fullTransform>(+0.932516 +0.0251189 -0.00742984 +0.360178)[+315.037 -447.155 +147.852]</fullTransform>
+		</transform>
+	</graspableBody>
+	<robot>
+		<filename>models/robots/MicoGripper/MicoGripper.xml</filename>
+		<dofValues>+0 +0 +0 +0 </dofValues>
+		<transform>
+			<fullTransform>(-0.340945 -0.00691225 -0.0252662 +0.939718)[+398.579 -317.037 +329.601]</fullTransform>
+		</transform>
+	</robot>
+	<camera>
+		<position>+403.521 -1114.83 +687.817</position>
+		<orientation>-0.474928 +0.0544934 +0.0676755 -0.875725</orientation>
+		<focalDistance>+141.965</focalDistance>
+	</camera>
+</world>
