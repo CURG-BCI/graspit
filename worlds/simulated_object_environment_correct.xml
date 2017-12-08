@@ -19,27 +19,21 @@
 		</transform>
 	</obstacle>
 	<graspableBody>
-		<filename>models/object_database/block_50.xml</filename>
+		<filename>models/object_database/block_76.xml</filename>
 		<transform>
-			<fullTransform>(+0.939718 +0.0252662 -0.00691225 +0.340945)[+397.685 -306.028 +118.99]</fullTransform>
+			<fullTransform>(-0.0284097 -0.0136723 -0.0378378 +0.998786)[+292.956 -334.133 +70.5729]</fullTransform>
 		</transform>
 	</graspableBody>
 	<graspableBody>
 		<filename>models/object_database/block_50.xml</filename>
 		<transform>
-			<fullTransform>(+0.999271 +0.0261576 +0.00139291 +0.0277902)[+208.195 -319.935 +114.373]</fullTransform>
+			<fullTransform>(-0.227817 -0.0210802 -0.0336778 +0.972893)[+147.981 -453.606 +114.441]</fullTransform>
 		</transform>
 	</graspableBody>
 	<graspableBody>
-		<filename>models/object_database/block_50.xml</filename>
+		<filename>models/object_database/block_76.xml</filename>
 		<transform>
-			<fullTransform>(+0.969058 +0.02583 -0.00435568 +0.24544)[+113.598 -207.911 +148.582]</fullTransform>
-		</transform>
-	</graspableBody>
-	<graspableBody>
-		<filename>models/object_database/block_64.xml</filename>
-		<transform>
-			<fullTransform>(+0.932516 +0.0251189 -0.00742984 +0.360178)[+315.037 -447.155 +147.852]</fullTransform>
+			<fullTransform>(-0.0266656 -0.0140624 -0.0366774 +0.998872)[+300.095 -464.691 +84.6044]</fullTransform>
 		</transform>
 	</graspableBody>
 	<robot>
@@ -50,8 +44,8 @@
 		</transform>
 	</robot>
 	<camera>
-		<position>+403.521 -1114.83 +687.817</position>
+		<position>+373.106 -1350.85 +844.509</position>
 		<orientation>-0.474928 +0.0544934 +0.0676755 -0.875725</orientation>
-		<focalDistance>+141.965</focalDistance>
+		<focalDistance>+426.487</focalDistance>
 	</camera>
 </world>

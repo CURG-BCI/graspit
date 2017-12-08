@@ -3,55 +3,49 @@
 	<obstacle>
 		<filename>models/objects/experiment_table.xml</filename>
 		<transform>
-			<fullTransform>(+0.651406 +0.0109093 -0.00883352 -0.758599)[-828.014 -224.211 +769.653]</fullTransform>
+			<fullTransform>(+0.651406 +0.0109093 -0.00883352 -0.758599)[+33.6132 -429.276 -249.307]</fullTransform>
 		</transform>
 	</obstacle>
 	<obstacle>
 		<filename>models/objects/chair.xml</filename>
 		<transform>
-			<fullTransform>(+0.0023129 +0.0848239 +0.996377 +0.00566737)[-1022.48 -403.804 +1615.7]</fullTransform>
+			<fullTransform>(+0.99558 +0.002462 -0.0399156 -0.0849774)[+771.481 -839.166 -486.621]</fullTransform>
 		</transform>
 	</obstacle>
 	<obstacle>
 		<filename>models/objects/monitor.xml</filename>
 		<transform>
-			<fullTransform>(+0.539778 -0.561441 -0.424199 +0.462038)[-793.294 +102.131 +993.958]</fullTransform>
+			<fullTransform>(+0.562467 +0.517067 +0.45597 +0.456469)[+725.867 -181.586 +79.6401]</fullTransform>
 		</transform>
 	</obstacle>
 	<graspableBody>
 		<filename>models/object_database/block_50.xml</filename>
 		<transform>
-			<fullTransform>(+0.933002 -6.0681e-17 +1.87308e-17 -0.35987)[-513.806 -71.7472 +932.415]</fullTransform>
+			<fullTransform>(-0.00160761 -0.00200018 -0.0224438 +0.999745)[+320.802 -358.313 +86.3773]</fullTransform>
 		</transform>
 	</graspableBody>
 	<graspableBody>
-		<filename>models/object_database/block_50.xml</filename>
+		<filename>models/object_database/block_76.xml</filename>
 		<transform>
-			<fullTransform>(+0.996593 -2.51891e-17 +9.56071e-19 -0.0824805)[-325.023 -92.986 +936.917]</fullTransform>
+			<fullTransform>(+0.677837 +0.0166617 +0.0151664 -0.734867)[+320.606 -490.213 +90.4594]</fullTransform>
 		</transform>
 	</graspableBody>
 	<graspableBody>
 		<filename>models/object_database/block_64.xml</filename>
 		<transform>
-			<fullTransform>(+0.926114 -6.15557e-17 +1.84202e-17 -0.377243)[-436.399 -214.456 +897.715]</fullTransform>
-		</transform>
-	</graspableBody>
-	<graspableBody>
-		<filename>models/object_database/block_50.xml</filename>
-		<transform>
-			<fullTransform>(+0.904677 -3.36624e-17 +3.29747e-17 -0.426098)[-226.629 +17.6066 +907.331]</fullTransform>
+			<fullTransform>(+0.620496 +0.0154689 +0.0163768 -0.783886)[+175.741 -457.05 +117.561]</fullTransform>
 		</transform>
 	</graspableBody>
 	<robot>
 		<filename>models/robots/MicoGripper/MicoGripper.xml</filename>
 		<dofValues>+0 +0 +0 +0 </dofValues>
 		<transform>
-			<fullTransform>(-6.0681e-17 -0.933002 +0.35987 +1.87308e-17)[-513.806 -71.7472 +759.315]</fullTransform>
+			<fullTransform>(-0.708812 -0.0091507 -0.0123945 +0.705229)[+323.143 -362.69 +282.913]</fullTransform>
 		</transform>
 	</robot>
 	<camera>
-		<position>-996.992 -1012.79 +480.05</position>
-		<orientation>+0.0985193 +0.792659 -0.593602 -0.098093</orientation>
-		<focalDistance>+949.165</focalDistance>
+		<position>+273.386 -1083.25 +689.23</position>
+		<orientation>-0.475217 +0.0700023 +0.0751923 -0.87385</orientation>
+		<focalDistance>+141.965</focalDistance>
 	</camera>
 </world>
